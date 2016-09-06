@@ -104,6 +104,7 @@
 #pragma mark - NSObject
 
 - (void)dealloc {
+    [super dealloc];
 	self.scrollView = nil;
 	self.delegate = nil;
 	dispatch_release(_animationSemaphore);
